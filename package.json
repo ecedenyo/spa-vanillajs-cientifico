@@ -1,0 +1,23 @@
+{
+  "name": "cientifico",
+  "version": "1.0.0",
+  "description": "proyecto platzi para la creacion de una spa con vanilla js",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC"
+}
