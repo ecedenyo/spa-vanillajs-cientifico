@@ -25,14 +25,14 @@ module.exports = {
     ],
   },
   plugins: [
-    // identificar plugins que se utilizaran
-    new HtmlWebpackPlugin([
+    // identificar plugins, mediante un objeto, que se utilizaran
+    new HtmlWebpackPlugin(
       // ... este lo instanciamos arriba
       {
         inject: true, // como se inyectara un valor
         template: "./public/index.html", // donde se encontrara el template principal / base
         filename: "./index.html", // especificar hacia donde se tiene que guardar
-      },
-    ]),
+      }
+    ),
   ],
 };
