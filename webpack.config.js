@@ -1,5 +1,6 @@
 const path = require("path"); // este 'path' incluido es propio de node, y nos permite movernos en las carpetas sin importar donde este
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // configuracion (objeto) de lo que va a suceder
 module.exports = {
@@ -34,5 +35,11 @@ module.exports = {
         filename: "./index.html", // especificar hacia donde se tiene que guardar
       }
     ),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/styles/styles.css",
+        to: "",
+      },
+    ]),
   ],
 };
